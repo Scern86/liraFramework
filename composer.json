@@ -1,0 +1,26 @@
+{
+    "name": "scern/lira",
+    "description": "Lira the small framework",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Scern\\Lira\\": "lira/",
+            "Scern\\Lira\\Application\\": "application/",
+            "Scern\\Lira\\Module\\": "module/"
+        }
+    },
+    "authors": [
+        {
+            "name": "scern"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "symfony/http-foundation": "^6.2",
+        "ext-pdo": "*",
+        "monolog/monolog": "^3.3",
+        "ext-memcached": "^3.2",
+        "mongodb/mongodb": "^1.15"
+    }
+}
