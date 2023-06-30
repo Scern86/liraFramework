@@ -1,7 +1,7 @@
 # Lira
 A small PHP framework for prototyping and developing web applications.
 
-# Possibilities:
+# Feature list:
 - Authorization, assigning groups and roles to users. Access control.
 - Full localization support for the entire application.
 - Request routing using path-based regular expressions (SEF).
@@ -15,7 +15,7 @@ A small PHP framework for prototyping and developing web applications.
 - Support for GET/POST/PUT/DELETE HTTP methods.
 - Ability to implement RESTful.
 
-# Stack of technologies and extensions
+# Technologies and extensions
 - nginx
 - PHP-FPM
 - PHP 8.2
@@ -25,7 +25,7 @@ A small PHP framework for prototyping and developing web applications.
 - Monolog
 - Symfony HTTP Foundation
 
-# Peculiarities
+# Extra
 Uses PHP 8.2 features, namespaces, PSR-4 autoloading, PSR-12 coding style.
 
 # Installation
