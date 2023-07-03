@@ -7,6 +7,7 @@ use Scern\Lira\{Application\App, Config\Config, Logger, Lexicon, CacheManager, E
 
 class Core
 {
+    public const VERSION = '7.2.0';
     private static ?Config $config = null;
     private static ?SessionManager $session_manager = null;
     private static ?Logger $logger = null;

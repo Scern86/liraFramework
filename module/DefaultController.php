@@ -18,8 +18,6 @@ class DefaultController implements Controller
     {
         $view = Core::APP()->view;
         $view->header = 'Default';
-        $view->content = 'Default module';
-        $view->meta_title = 'Default page';
         $view->setTemplate(ROOT_DIR.DS.'module'.DS.'Front'.DS.'templates'.DS.'error.inc');
         return new ResultError('Not found',404,Response::HTTP_NOT_FOUND);
     }

@@ -14,6 +14,8 @@ use Symfony\Component\HttpFoundation\{Request, Response, RedirectResponse, JsonR
 
 class App implements Controller
 {
+    public const VERSION = '1.0.0';
+
     protected Response $response;
 
     private static $was_handled=false;

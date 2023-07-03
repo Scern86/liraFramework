@@ -17,14 +17,18 @@ class MongoDb extends Database
 
     public function __construct(array $config)
     {
-        extract($config);
-        if(!array_key_exists($database,self::$databases)){
-            $dsn = "mongodb://{$host}:{$port}";
-            $client = new \MongoDB\Client($dsn);
-            $this->db = $client->selectDatabase($database);
-        }else{
-            $this->db = null;
-            // Log
+        try{
+            extract($config);
+            if(!array_key_exists($database,self::$databases)){
+                $dsn = "mongodb://{$host}:{$port}";
+                $client = new \MongoDB\Client($dsn);
+                $this->db = $client->selectDatabase($database);
+            }else{
+                $this->db = null;
+                // Log
+            }
+        }catch (\Throwable $e){
+            var_dump($e);
         }
     }
 }

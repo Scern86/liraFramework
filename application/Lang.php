@@ -4,11 +4,11 @@ namespace Scern\Lira\Application;
 
 use Scern\Lira\Core;
 
-class Lang
+readonly class Lang
 {
-    public readonly string $url_part;
+    public string $url_part;
 
-    public function __construct(public readonly string $code='ru')
+    public function __construct(public string $code='ru')
     {
         $this->url_part = $code!==Core::CONFIG()->get('default_language') ? '/'.$this->code : '';
     }

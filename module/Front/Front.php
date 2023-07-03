@@ -10,6 +10,7 @@ use Scern\Lira\Core;
 
 class Front implements Controller
 {
+    public const VERSION = '1.0.0';
     public function handle(string $url): Result
     {
         $view = Core::APP()->view;

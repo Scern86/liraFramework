@@ -12,12 +12,14 @@ $lang_part = Core::LEXICON()->lang->url_part;
         <title><?=$this->meta_title;?></title>
         <meta name="description" content="<?=$this->meta_description;?>">
         <meta name="keywords" content="<?=$this->meta_keyword;?>">
+        <meta name="generator" content="Lira framework <?=Core::VERSION;?>">
         <link rel="icon" href="/favicon.ico">
-        <link rel="stylesheet" href="/assets/css/main.min.css">
+        <link rel="stylesheet" href="/assets/css/main.min.css?t=0.0">
     </head>
     <body>
         <header>
-            <h1 class="header-title">Lira</h1>
+            <h1 class="header-title">Scern</h1>
+            <span class="header-subtitle"><i>Progress. Making great. No harm</i></span>
         </header>
         <main>
             <?=$this->content;?>
@@ -30,6 +32,7 @@ $lang_part = Core::LEXICON()->lang->url_part;
                 <button type="button" data-lang="es">ES</button>
                 <button type="button" data-lang="de">DE</button>
             </nav>
+            <span style="color:yellowgreen">Core version <?=Core::VERSION;?></span>
         </footer>
         <script type="module">
             import {Application} from "/assets/js/classes/app.min.js";
