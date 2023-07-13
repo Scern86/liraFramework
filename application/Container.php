@@ -10,8 +10,8 @@ class Container
 
     private array $values = [];
 
-    public function __construct(bool $readonly = false)
+    public function __construct(bool $append_donly = false)
     {
-        $this->readonly_setter = $readonly;
+        $this->append_only_setter = $append_donly;
     }
 }

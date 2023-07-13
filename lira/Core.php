@@ -3,7 +3,7 @@
 namespace Scern\Lira;
 
 use Closure;
-use Scern\Lira\{Application\App, Config\Config, Logger, Lexicon, CacheManager, EventManager, DatabaseManager, User};
+use Scern\Lira\{Application\App, Config\Config};
 
 class Core
 {

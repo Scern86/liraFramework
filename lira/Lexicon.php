@@ -3,7 +3,6 @@
 namespace Scern\Lira;
 
 use Scern\Lira\Config\Source;
-use Scern\Lira\Application\Lang;
 
 class Lexicon
 {

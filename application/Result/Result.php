@@ -2,6 +2,6 @@
 
 namespace Scern\Lira\Application\Result;
 
-abstract class Result
+abstract readonly class Result
 {
 }

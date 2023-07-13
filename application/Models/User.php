@@ -5,7 +5,6 @@ namespace Scern\Lira\Application\Models;
 use MongoDB\BSON\ObjectId;
 use MongoDB\Database;
 use MongoDB\Model\BSONDocument;
-use Scern\Lira\Application\Models\Objects;
 
 class User extends Objects
 {

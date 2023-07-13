@@ -2,11 +2,11 @@
 
 namespace Scern\Lira;
 
-class Event
+readonly class Event
 {
-    public readonly ?string $source;
+    public ?string $source;
 
-    public function __construct(public readonly string $event_name, public readonly string $message = '', public readonly int|string $code = 0, public readonly array $params = [])
+    public function __construct(public string $event_name, public string $message = '', public int|string $code = 0, public array $params = [])
     {
         $function = 'triggerEvent';
         $debug = debug_backtrace(DEBUG_BACKTRACE_IGNORE_ARGS, 0);

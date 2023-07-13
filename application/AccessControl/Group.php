@@ -32,7 +32,7 @@ class Group
 
     private static function defineCallerClass(string $function_name): ?string
     {
-        $debug = debug_backtrace(DEBUG_BACKTRACE_IGNORE_ARGS, 0);
+        $debug = debug_backtrace(DEBUG_BACKTRACE_IGNORE_ARGS);
         return array_reduce(
             $debug,
             fn($carry, $item)=>is_string($carry) ? $carry :

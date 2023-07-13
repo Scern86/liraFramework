@@ -2,9 +2,9 @@
 
 namespace Scern\Lira\Module;
 
-use Scern\Lira\Core;
+use Scern\Lira\{Core, Lang as CoreLang};
 use Scern\Lira\Application\Result\{Result, ResultInternalRedirect, ResultHttpRedirect, ResultJson};
-use Scern\Lira\Application\{Interfaces\Controller,Lang as ApplicationLang};
+use Scern\Lira\Application\{Interfaces\Controller};
 
 class Lang implements Controller
 {
@@ -23,7 +23,7 @@ class Lang implements Controller
         if(empty($redirect_url)) $redirect_url = '/';
         if($lang==$default_language) return new ResultHttpRedirect($redirect_url,301);
         else {
-            Core::LEXICON()->lang = new ApplicationLang($lang);
+            Core::LEXICON()->lang = new CoreLang($lang);
             return new ResultInternalRedirect($redirect_url);
         }
     }

@@ -1,8 +1,8 @@
 <?php
 require_once ROOT_DIR . DS . 'vendor' . DS . 'autoload.php';
 
-use Scern\Lira\{Core, SessionManager, CacheManager, Config, Logger, Lexicon, EventManager, Event, DatabaseManager};
-use Scern\Lira\Application\{App, Router, View, Lang};
+use Scern\Lira\{Core, SessionManager, CacheManager, Config, Logger, Lang, Lexicon, EventManager, Event, DatabaseManager};
+use Scern\Lira\Application\{App, Router, View};
 use \Monolog\{Logger as MonologLogger, Level, Handler\StreamHandler};
 use \Symfony\Component\HttpFoundation\Request;
 use Scern\Lira\Module\DefaultController;
@@ -29,7 +29,7 @@ $view = new View();
 
 $router = new Router($request->getRequestUri(),
     DefaultController::class,
-    (new Config\PhpArray(ROOT_DIR . DS . 'application' . DS. 'Routes' . DS . 'routes.php'))->getArray()
+    (new Config\PhpArray(ROOT_DIR . DS . 'config' . DS. 'Routes' . DS . 'routes.php'))->getArray()
 );
 
 $app = new App($request, $router, $view);

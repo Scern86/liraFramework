@@ -2,9 +2,9 @@
 
 namespace Scern\Lira\Application\Result;
 
-class ResultInternalRedirect extends Result
+readonly class ResultInternalRedirect extends Result
 {
-    public function __construct(public readonly string $url)
+    public function __construct(public string $url)
     {
     }
 }

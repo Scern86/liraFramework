@@ -14,7 +14,7 @@ $lang_part = Core::LEXICON()->lang->url_part;
         <meta name="keywords" content="<?=$this->meta_keyword;?>">
         <meta name="generator" content="Lira framework <?=Core::VERSION;?>">
         <link rel="icon" href="/favicon.ico">
-        <link rel="stylesheet" href="/assets/css/main.min.css?t=0.0">
+        <link rel="stylesheet" href="/assets/css/main.min.css?t=0.00">
     </head>
     <body>
         <header>
@@ -31,8 +31,9 @@ $lang_part = Core::LEXICON()->lang->url_part;
                 <button type="button" data-lang="gr">GR</button>
                 <button type="button" data-lang="es">ES</button>
                 <button type="button" data-lang="de">DE</button>
+                <button type="button" data-lang="fr">FR</button>
             </nav>
-            <span style="color:yellowgreen">Core version <?=Core::VERSION;?></span>
+            <span style="color:#32cdbb">Core version <?=Core::VERSION;?></span>
         </footer>
         <script type="module">
             import {Application} from "/assets/js/classes/app.min.js";

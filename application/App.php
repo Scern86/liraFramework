@@ -2,8 +2,8 @@
 
 namespace Scern\Lira\Application;
 
-use Scern\Lira\{Core, Config\PhpArray, Lexicon};
-use Scern\Lira\Application\{Interfaces\Controller, MongoDb, Router, View, Lang};
+use Scern\Lira\{Core, Config\PhpArray};
+use Scern\Lira\Application\{Interfaces\Controller};
 use Scern\Lira\Application\Result\{Result,
     ResultSuccess,
     ResultError,

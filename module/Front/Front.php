@@ -22,6 +22,7 @@ class Front implements Controller
     public function __construct(private string $url_path)
     {
         Core::LEXICON()->add(new PhpArray(ROOT_DIR . DS . 'module' . DS . 'Front' . DS . 'Lexicon' . DS . Core::LEXICON()->lang->code . '.php'), Core::LEXICON()->lang);
-        Core::LEXICON()->add(new LexiconMongodbArray(Core::LEXICON()->lang->code,'Front','PHP'), Core::LEXICON()->lang);
+        Core::LEXICON()->add(new LexiconMongodbArray(Core::LEXICON()->lang,'Front','PHP'), Core::LEXICON()->lang);
     }
+
 }
